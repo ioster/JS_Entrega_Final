@@ -16,7 +16,6 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
 })
 
 const cotizaionUSD = JSON.parse(localStorage.getItem("cotizacion"));
-document.getElementById("cotizacion").innerHTML = cotizaionUSD
 
 fetch('js/productos.json')
 .then(response => response.json())
